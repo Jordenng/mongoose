@@ -15,4 +15,12 @@ const movieSchema = new mongoose.Schema({
 })
 
 const Movie = mongoose.model('Movie', movieSchema)
-new Movie({title:'legally blonde',year:1998,score:10,rating:'a'})
+
+Movie.insertMany([
+    {title:'legally blonde',year:1998,score:10,rating:'a'},
+    {title:'emily in paris',year:2020,score:9,rating:'b'}
+
+]).then(data=>{
+    console.log("it worked")
+    console.log(data)
+})
