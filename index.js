@@ -24,3 +24,5 @@ Movie.insertMany([
     console.log("it worked")
     console.log(data)
 })
+
+Movie.find({year:{$gte:2015}}).then(data=>console.log(data))
