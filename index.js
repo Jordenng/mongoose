@@ -8,7 +8,7 @@ mongoose.connect("mongodb://localhost:27017/movieApp",{useNewUrlParser:true,useU
 })
 
 const movieSchema = new mongoose.Schema({
-    title: String,
+    title: String1,
     year: Number,
     score: Number,
     rating: String
